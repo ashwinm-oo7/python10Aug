@@ -1,1 +1,83 @@
 
+1.     Write a Python program that takes a number as input and prints "Even" if the number is even and "Odd" if it's odd.
+
+# Function to check if a number is even or odd
+def check_even_odd(number):
+    if number % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+
+# Taking user input
+try:
+    user_input = int(input("Enter a number: "))  # Convert input to integer
+    check_even_odd(user_input)
+except ValueError:
+    print("Please enter a valid integer.")
+
+2.      Create a Python program that checks whether a person is eligible to vote (18 years or older) based on their age.
+
+
+# Function to check voting eligibility
+def check_voting_eligibility(age):
+    if age >= 18:
+        print("You are eligible to vote.")
+    else:
+        print("You are not eligible to vote.")
+
+# Taking user input
+try:
+    user_age = int(input("Enter your age: "))  # Convert input to integer
+    check_voting_eligibility(user_age)
+except ValueError:
+    print("Please enter a valid age.")
+
+3.      Write a Python program that determines if a given year is a leap year or not.
+
+# Function to check if a year is a leap year
+def is_leap_year(year):
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        print(f"{year} is a leap year.")
+    else:
+        print(f"{year} is not a leap year.")
+
+# Taking user input
+try:
+    user_year = int(input("Enter a year: "))  # Convert input to integer
+    is_leap_year(user_year)
+except ValueError:
+    print("Please enter a valid year.")
+
+4.      Create a Python program that checks if a user-given number is positive, negative, or zero.
+
+# Function to check if a number is positive, negative, or zero
+def check_number_sign(number):
+    if number > 0:
+        print("The number is positive.")
+    elif number < 0:
+        print("The number is negative.")
+    else:
+        print("The number is zero.")
+
+# Taking user input
+try:
+    user_number = float(input("Enter a number: "))  # Convert input to float
+    check_number_sign(user_number)
+except ValueError:
+    print("Please enter a valid number.")
+
+5.      Write a Python program that determines the largest of three numbers entered by the user.
+
+# Function to determine the largest of three numbers
+def find_largest_of_three(num1, num2, num3):
+    largest = max(num1, num2, num3)  # Using the max function
+    print(f"The largest number is: {largest}")
+
+# Taking user input
+try:
+    number1 = float(input("Enter the first number: "))
+    number2 = float(input("Enter the second number: "))
+    number3 = float(input("Enter the third number: "))
+    find_largest_of_three(number1, number2, number3)
+except ValueError:
+    print("Please enter valid numbers.")
